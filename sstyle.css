@@ -1,0 +1,125 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to right, rgb(238, 180, 180) , rgb(229, 229, 162));
+}
+.sum{
+  position:relative;
+  float: right;
+  margin-right: 400px;
+}
+
+ 
+  header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  .hero a:link { color: white; } 
+	.hero a:hover { color: blue;}
+  
+  
+  /* Only this part is changable */
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 16px;
+    border-radius: 25px; /* Round boxes for the navigation links */
+    margin: 5px; /* Add space between the round boxes */
+}
+
+/* Hover effect */
+.navbar a:hover {
+    background-color: #2e2e2e;
+    color: white;
+}
+
+/* Active link */
+.navbar a.active {
+    background-color: #534caf;
+    color: white;
+}
+/* MAKE SURE THAT THIS IS AT THE BEGINNING OF YOUR CSS */
+/* AFTER THIS YOUR CONTENT DON'T CHANGE ANYTHING */
+  
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+  }
+  
+  .hero h1 {
+    font-size: 3rem
+  }
+
+
+
+
+  .container {
+    position: relative;
+    width: 50%;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .container:hover .image {
+    opacity: 0.3;
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+  
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    padding: 16px 32px;
+  }
